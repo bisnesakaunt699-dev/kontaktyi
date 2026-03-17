@@ -1,0 +1,77 @@
+<style>
+body{
+margin:0;
+font-family:Arial;
+color:white;
+text-align:center;
+
+/* анимированный фон */
+background: linear-gradient(-45deg,#1d2b64,#f8cdda,#2c5364,#0f2027);
+background-size:400% 400%;
+animation: bgmove 12s ease infinite;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* центрирование секции */
+#contacts{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* «куб» (карточка) */
+.contact-box{
+background:rgba(0,0,0,0.65);
+padding:40px;
+border-radius:20px;
+width:400px;
+box-shadow:0 0 25px rgba(0,0,0,0.7);
+transition:0.4s;
+}
+
+/* лёгкая анимация при наведении */
+.contact-box:hover{
+transform:scale(1.05);
+box-shadow:0 0 35px rgba(255,255,255,0.3);
+}
+
+.contact-box a{
+color:#4da6ff;
+text-decoration:none;
+}
+</style>
+
+
+<section id="contacts">
+
+<div class="contact-box">
+
+<h2>Контакты</h2>
+
+<p>Если хотите связаться со мной или сотрудничать — используйте мои социальные сети.</p>
+
+<p><b>Email:</b> bisnesakaunt699@gmail.com</p>
+
+<p><b>Gmail:</b> erzanmusakuov6@gmail.com</p>
+
+<p><b>Instagram:</b><br>
+<a href="https://www.instagram.com/ermuhamedov08?igsh=MXVidmwzbHMzMzRvZg==">instagram.com/yourname</a>
+</p>
+
+<p><b>YouTube:</b><br>
+<a href="https://youtube.com/@yourname">youtube.com/@yourname</a>
+</p>
+
+<p><b>Telegram:</b><br>
+<a href="https://t.me/yourname">t.me/yourname</a>
+</p>
+
+</div>
+
+</section>
